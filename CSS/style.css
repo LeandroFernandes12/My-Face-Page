@@ -1,0 +1,138 @@
+/* Alterações gerais do código para remover padding e margem padrão */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Definições iniciais do body */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8679D9;
+}
+
+/* Definir cor de fundo do cabeçalho */
+header{
+    background-color: #5833A6;
+}
+
+/* Definir um cabeçalho com cor de texto, padding e alinhamento de texto */
+header div{
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Definições para a imagem de usuário */
+header a img{
+    position: absolute;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 10%;
+    width: 5%;
+    border: 2px solid black;
+    border-radius: 1000px;
+}
+
+/* Criação de um quadro apenas para a biografia  */
+.biografia{
+    background-color: #C7BAD9;
+    padding: 60px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #5833A6;
+    border-radius: 10px;
+}
+
+/* Adição de um padding para separar título de texto */
+main div h3{
+    padding-bottom: 10px;
+}
+
+/* Definições para a imagem */
+.shrek{
+    display: flex;
+    margin-top: 160px;
+    margin-left: 65%;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+}
+
+/* Criação de um quadro apenas para contato */
+.contato{
+    background-color: #C7BAD9;
+    width: 40%;
+    padding: 60px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #5833A6;
+    border-radius: 10px;
+}
+
+/* Criação de um quadro apenas para hobbies e interesses*/
+.hobbie{
+    background-color: #C7BAD9;
+    width: 40%;
+    padding: 60px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #5833A6;
+    border-radius: 10px;
+}
+
+/* Pequeno espaço a esquerda para separar os itens da lista */
+.hobbie ul{
+    margin-left: 20px;
+}
+
+/* Definição de um rodapé com cor de fundo, cor de texto e tamanho */
+footer{
+    color: white;
+    display: flex;
+    position: static;
+    width: 100%;
+    background-color: #5833A6;
+    padding-bottom: 40px;
+}
+
+/* Ajustes para deixar o texto do rodapé centralizado */
+footer p{
+    margin-left: 37%;
+    margin-top: 30px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1200px) {
+        
+    /* Ajeitar posição da imagem quando a tela é diminuida */
+    .shrek{            
+        text-align: center;
+    }
+
+    /* Ajeitar texto do rodapé quando a tela é diminuida */
+    footer p {
+        text-align: center;
+        padding-right: 150px;
+        
+    }
+
+    /* Ajeitar imagem de usuário quando a tela é diminuida */
+    header a img{
+        position: absolute;
+        padding: 5px;
+        margin-top: 10px;
+        margin-left: 10px;
+        height: 10%;
+        width: 5%;
+        border: 2px solid black;
+        border-radius: 1000px;
+    }
+
+
+}
